@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+body { line-height: 1 ; }
+  
+ul, ol { list-style: none; }
+  
+blockquote, q { quotes: none; }
+  
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+/* ustawienia ogólne */
+body { 
+    background: #ffffff;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0px;
+    overflow: auto;
+    position: center; 
+    background-attachment: inherit; }
+
+/* nagłówki - h, akapity - p, linki - a, listy - li. */
+
+h1, p, a, li { 
+    color: rgb(228, 182, 145); 
+    font-size: 14px;
+    font-family: 'Playfair Display', serif; }
+
+/* header */
+
+header { 
+    position: relative; 
+    background: transparent;
+    overflow: hidden;
+    text-align: center; }
+
+/* nav - menu */
+
+nav {
+    position: fixed;
+    width: 100%;
+    transition-timing-function: linear;
+    transition-duration: 200ms;	
+    transition-property: all; }
+
+nav.active {
+    top: -29px;
+    margin-top: 0%; }
+
+nav div {
+    width: 100%;
+	  margin: auto; } 
+
+nav ul {
+    list-style-type: none;
+    font-size: 14px;
+    height: 50px;
+    line-height: 2em;
+    text-align: center;
+    margin: 2%; }
+
+nav ul li {
+    float: left;
+    padding: 5px 0;
+    background-color: #ffffff;
+    width: 25%;
+    text-align: center; }
+
+nav ul li a {
+    display: block; 
+    transition-duration: 300ms;
+	  transition-property: all;
+    padding: 17px 0px 9px 0px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none; 
+    outline: none; 
+    color: rgb(228, 182, 145); }
+
+/* zmiana tła po najechaniu myszką */
+
+nav ul li a:hover {
+    color: darkgray; }
+
+/* main - część główna strony */
+
+main {
+    margin: 2%;
+    color: rgb(228, 182, 145); 
+    font-size: 14px;
+    line-height: 2em;
+    text-align: justify;
+    padding: 5px; 
+    background: transparent; }
+
+main h1 { text-align: center; }
+
+section.image {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; }
+
+#ofert ul { 
+  list-style: circle; 
+  margin-left: 2%;}
+
+#contact a { font-size: 100%; }  
+    
+footer p {
+    width: 50%;
+    float: left; 
+    margin-left: 2%;
+    margin-bottom: 2%;
+    opacity: 0.6;
+    filter: alpha(opacity=60); }

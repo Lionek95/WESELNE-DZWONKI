@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+     <head>
+          <title>Weselne Dzwonki</title>
+
+          <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+          <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+          <link rel="stylesheet" href="CSS/style.css" />
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="" />
+
+     </head>
+
+     <body>
+
+          <header>
+               <img src="Images/weselnedzwonki.png" alt="Weselne Dzwonki" />
+          </header>
+
+          <nav>
+               <div class="ph-line-nav">
+                    <ul>
+                         <li><a href="index.html">Start</a></li>
+                         <li><a href="#about-me">O mnie</a></li>
+                         <li><a href="#ofert">Oferta</a></li>
+                         <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                    <div class="effect"></div>
+               </div>
+          </nav>
+
+     <main>
+
+          <section id="about-me">
+               <article>
+                    <section class="image" style="background-image: url('Images/omnie.JPG')"></section>
+                    <h1>O mnie</h1>
+                    <p>
+                              <br>Nazywam się Beata Jakubiec i jestem Wedding Plannerką. Byłam właścicielką salonu odnowy biologicznej SPA i terapeutą SPA. Dzięki doświadczeniu zawodowemu oraz kontaktach z klientami zaczęłam też rozwijać swoje pasje jakimi są: urządzanie ślubów i wesel, oraz zbieranie starej porcelany. W branży ślubnej jestem od 5 lat, kiedy zorganizowałam pierwsze wesele. Później wesele męża brata, następnie wesele mojego brata, a jeszcze później wesele znajomych i kilka innych przyjęć rodzinnych.<br>  
+                              <br>Wtedy zapadła decyzja o byciu Wedding Plannerką na poważnie. Pojechałam na kurs, który dał mi dużą dodatkową  wiedzę.  Przeszłam szkolenie z zasad savoir-vivre, a także szkolenie sommelierskie. Uwielbiam przyjęcia pięknie nakryte stoły i moment wybierania sukni ślubnej z Panną Modą.<br> 
+                              <br>Do każdego ślubu, wesela czy przyjęcia podchodzę indywidualnie. Decyzje podejmuję świadomie i odpowiedzialnie, wiedząc że obdarzono mnie bardzo dużym zaufaniem. Staram się pracować z profesjonalistami. Dużo od siebie wymagam i zawsze muszę mieć wszystko dopięte na ostatni guzik.<br> 
+                              <br>Jako konsultant ślubny czuwam nad całym przebiegiem ślubu czy wesela, dbając żeby moi klienci byli szczęśliwi i w pełni zadowoleni.<br>
+                    </p>
+               </article>
+          </section>
+          <section id="ofert">
+               <section class="image" style="background-image: url('Images/oferta.JPG')"></section>
+               <article>
+                    <h1>Oferta</h1>
+                    <p>
+                         <br>Przede wszystkim zajmuję się całościowym przygotowaniem ślubu i wesela, częściowym przygotowaniem ślubu i wesela, a take ich koordynacją. Pełna lista usług:<br>
+                    </p>
+                         <ul>
+                              <li>Wystrój sali weselnej, </li>
+                              <li>Wystrój kościoła oraz tabernakulum, </li>
+                              <li>Polecenie kontaktów do rónych restauracji cateringów, sal, orkiestr, DJów, fotografów, salonów sukni ślubnych, kwiaciarni itp. </li>
+                         </ul>
+               </article>
+          </section>
+          <section id="contact">
+               <article>
+                    <section class="image" style="background-image: url('Images/kontakt.JPG')"></section>
+                    <h1>Kontakt</h1>
+                         <ul>
+                              <li> Kontakt: Ul.Grunwaldzka 15, 78-400 Szczecinek </li>
+                              <li> Telefon: +48 693 555 687 </li>
+                              <li> E-mail: <a href="beatajakubiec@interia.pl">beatajakubiec@interia.pl</a> </li>
+                         </ul>
+               </article>
+          </section>
+
+     </main>
+
+          <footer>
+               <p class="copyright">Copyright &copy; by Weselne Dzwonki</p>
+          </footer>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script>
+              $(document).on('click', 'a[href^="#"]', function (e) {
+                  e.preventDefault();
+              $('html, body').stop().animate({
+                  scrollTop: $($(this).attr('href')).offset().top
+                      }, 1000, 'linear');
+              });
+          </script>
+
+          <script src="JS/script.js"></script>
+          <script>
+          $(window).scroll(function(){
+               var top = $(window).scrollTop();
+               var find_class_active = $.contains('nav', '.active');
+               if(top > 80 && find_class_active == false) {
+          $('nav').addClass('active'); }
+          else {
+          $('nav').removeClass('active'); }
+          });
+          </script>
+
+          <script src="bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="bower_components/parallax.js/parallax.min.js"></script>
+
+          <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+          <script>
+          window.sr = ScrollReveal();
+          sr.reveal('h1, p', {
+               reset: true,
+               delay: 300
+               });
+          </script>
+
+     </body>
+</html>
