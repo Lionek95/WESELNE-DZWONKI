@@ -195,11 +195,6 @@ main {
     min-height: 550px;
 }
 
-@media only screen and (max-device-width: 1024px) {
-    .parallax-about-me, .parallax-ofert, .parallax-contact { 
-        background-attachment: scroll; } 
-}
-
 #ofert ul { 
   list-style: circle; 
   margin-left: 2%;
@@ -228,6 +223,25 @@ footer p {
     filter: alpha(opacity=65);
 }
     
-@media only screen and (max-device-width: 1024px) { 
-    .parallax-ending { background-attachment: scroll; } 
+@media only screen and (max-width: 1024px) { 
+    .parallax-about-me, .parallax-ofert, .parallax-contact, .parallax-ending { background-attachment: scroll; }
+    footer p { text-align: center; }
 }
+
+@media only screen and (max-width: 768px) {
+    nav ul li a { font-size: 14px; }
+    img {max-width: 500px; }
+    footer p { text-align: center; }
+  }
+    
+  @media only screen and (max-width: 576px) {
+    nav ul li a { font-size: 12px; }
+    img {max-width: 400px; }
+    footer p { text-align: center; }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    nav ul li a { font-size: 10px; }
+    img {max-width: 250px; }
+    footer p { text-align: center; }
+  }
