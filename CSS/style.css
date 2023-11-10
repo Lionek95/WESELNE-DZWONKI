@@ -11,10 +11,11 @@
 body {
   font-size: 14px;
   font-family: "Bitter", serif;
+  color: #7a7a7a;
   background: #ffffff;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.5;
   overflow: auto;
 }
 
@@ -25,7 +26,6 @@ h1 {
 
 /* Style h2 elements */
 h2 {
-  color: rgb(228, 182, 145);
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -34,102 +34,102 @@ h2 {
 
 /* Style p elements */
 p {
-  color: rgb(228, 182, 145);
-  font-size: 14px;
-  font-family: "Bitter", serif;
-  padding: 0 50px;
   text-align: justify;
 }
 
 /* Style links and list items */
 a,
 li {
-  color: rgb(228, 182, 145);
-  font-size: 14px;
-  font-family: "Bitter", serif;
+  color: #7a7a7a;
+}
+
+a:hover {
+  color: #e79372;
+  text-decoration: underline;
 }
 
 /* Style the header */
 header {
+  display: flex;
   position: relative;
-  background: transparent;
   overflow: hidden;
-  text-align: center;
+}
+
+.title img {
+  width: 80px;
+  padding: 10px;
+  height: auto;
 }
 
 /* Style the navigation */
 nav {
-  background-color: #ffffff;
-  display: block;
+  display: flex;
   width: 100%;
 }
 
 nav .horizontal-menu {
   width: 100%;
-  text-align: center;
-  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+nav .social-icons {
+  display: flex;
+  align-self: center;
 }
 
 nav ul {
   list-style-type: none;
-  font-size: 14px;
-  height: 50px;
-  line-height: 2em;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin: 2%;
 }
 
 nav ul li {
-  float: left;
-  padding: 5px 0;
-  background-color: #ffffff;
-  width: 16.5%;
+  padding: 10px;
   text-align: center;
 }
 
 nav ul li a {
   display: block;
-  padding: 10px 0;
-  margin-top: 5px;
   text-align: center;
   text-decoration: none;
   outline: none;
-  font-size: 20px;
-  color: rgb(228, 182, 145);
-}
-
-nav ul li a:hover {
-  color: darkgray;
+  font-size: 14px;
 }
 
 /* Style the 'fab' elements */
 .fab {
-  border: 1px solid rgb(228, 182, 145);
+  border: 1px solid #7a7a7a;
   border-radius: 50%;
-  font-size: 1em;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
   text-align: center;
-  color: rgb(228, 182, 145);
+  color: #7a7a7a;
 }
 
 a .fab:hover {
-  border-color: darkgray;
-  color: darkgray;
+  border-color: #e79372;
+  color: #e79372;
 }
 
 /* Style the main content */
 main {
-  margin: 2%;
-  color: rgb(228, 182, 145);
-  font-size: 14px;
-  line-height: 2em;
-  text-align: justify;
-  padding: 5px;
   background: transparent;
   display: block;
   margin: 0 auto;
+}
+
+section {
+  padding: 50px;
+}
+
+#ofert {
+  background-color: #EBE2DAB3;
+  color: #7a7a7a;
 }
 
 /* Style parallax sections */
@@ -152,17 +152,21 @@ main {
 
 .parallax-ofert {
   background-image: url("oferta.JPG");
-  min-height: 550px;
+  min-height: 500px;
 }
 
 .parallax-contact {
   background-image: url("kontakt.JPG");
-  min-height: 550px;
+  min-height: 500px;
 }
 
 .parallax-ending {
   background-image: url("koniec.jpg");
-  min-height: 550px;
+  min-height: 500px;
+}
+
+footer {
+  padding: 50px;
 }
 
 /* Style the "back to top" button */
@@ -175,14 +179,14 @@ main {
   background: transparent;
   border: none;
   outline: none;
-  color: darkgray;
+  color: #bdbdbd;
   cursor: pointer;
   padding: 15px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 #backTop:hover {
-  color: rgb(228, 182, 145);
+  color: #e79372;
 }
 
 /* Media queries for responsiveness */
@@ -198,29 +202,14 @@ main {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  nav ul li a {
-    font-size: 14px;
-  }
-  img {
-    max-width: 500px;
-  }
-}
-
 @media only screen and (max-width: 576px) {
   nav ul li a {
     font-size: 12px;
-  }
-  img {
-    max-width: 400px;
   }
 }
 
 @media only screen and (max-width: 375px) {
   nav ul li a {
     font-size: 10px;
-  }
-  img {
-    max-width: 250px;
   }
 }
